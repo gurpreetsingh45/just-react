@@ -1,5 +1,7 @@
-export default function Footer({year, school}){
+function Footer({year, school}){
     return (
         <p>© {year} {school}</p>
     )
 }
+
+export default Footer;

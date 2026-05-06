@@ -6,7 +6,7 @@ function StudentScoreCard({ name, initialScore = 0 }) {
     setScore((prev) => prev + 10);
   };
   const reduceScore = () => {
-    setScore((prev) => prev - 10);
+    setScore(prev => Math.max(0, prev - 10));
   };
   const reset = () => {
     setScore(0);
