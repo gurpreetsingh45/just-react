@@ -1,14 +1,13 @@
 import StudentCard from "./components/StudentCard";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import StudentScoreCard from "./components/StudentScoreCard";
 function App(){
   return(
     <>
     <Navbar name="Claude ai" title="100x Ai School"/>
-    <StudentCard name="Grok" course="AIP343" language="TS" gpa={3.5}/>
-    <StudentCard name="Chatgpt" course="AIP345" language="python" gpa={2.6}/>
-    <StudentCard name="Copilot" course="AIP344" language="R" />
+    <StudentScoreCard name="Claude"></StudentScoreCard>
+    <StudentScoreCard name="Grok" initialScore={20}></StudentScoreCard>
     <Footer school="AI School" year={2021}/>
     </>
   )
