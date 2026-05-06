@@ -1,13 +1,12 @@
-const studentName = "ChatGpt";
-const course = "AIP343";
-const favLanguage = "Python";
-
-export default function StudentCard(){
+function StudentCard({name, course, language, gpa = 'N/A'}){
     return(
-        <div style={{background : 'grey', display : "flex", flexDirection : 'column', width : 'fit-content', alignItems : 'center', margin : '2em', padding : '2em'}}>
-            <h2>{studentName}</h2>
+        <div style={{background : 'grey', display : "flex", flexDirection : 'column', width : 'fit-content', alignItems : 'center', margin : '2em', padding : '2em', borderRadius : "2em"}}>
+            <h2>{name}</h2>
             <p>Couse : {course}</p>
-            <p>Favourite Language : {favLanguage}</p>
+            <p>Favourite Language : {language}</p>
+            <p>Gpa : {gpa}</p>
         </div>
     )
 }
+
+export default StudentCard;

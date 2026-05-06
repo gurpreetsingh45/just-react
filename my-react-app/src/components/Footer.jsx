@@ -1,5 +1,5 @@
-export default function Footer(){
+export default function Footer({year, school}){
     return (
-        <p>© 2026 Seneca Polytechnic</p>
+        <p>© {year} {school}</p>
     )
 }

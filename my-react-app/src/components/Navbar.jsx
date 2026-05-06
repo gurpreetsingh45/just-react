@@ -1,10 +1,10 @@
-const name = "Claude Ai";
-
-export default function Navbar(){
+function Navbar({title, name}){
     return (
         <>
-        <h1>🎓 Seneca Directory</h1>
+        <h1>{title}</h1>
         <h1>Name : {name}</h1>
         </>
     )
 }
+
+export default Navbar;
