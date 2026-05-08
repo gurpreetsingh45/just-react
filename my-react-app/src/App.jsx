@@ -4,17 +4,16 @@
 // import StudentScoreCard from "./components/StudentScoreCard";
 // import NoteTaker from "./components/NoteTaker";
 // import LoginCard from "./components/LoginCard";
+// import { useState } from "react";
+// import SearchBar from "./components/Project/SearchBar";
+// import StudentList from "./components/Project/StudentList";
 
-import { useState } from "react";
-import SearchBar from "./components/Project/SearchBar";
-import StudentList from "./components/Project/StudentList";
+import RegisterForm from "./components/Forms/RegisterForm";
 
 function App(){
-  const [input, setInput] = useState("");
   return(
     <>
-      <SearchBar filter={input} setFilter={setInput}/>
-      <StudentList filter={input}/>
+      <RegisterForm/>
     </>
   )
 }
