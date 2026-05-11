@@ -1,9 +1,11 @@
-function Navbar({title, name}){
+import { Link } from "react-router-dom";
+function Navbar(){
     return (
-        <>
-        <h1>{title}</h1>
-        <h1>Name: {name}</h1>
-        </>
+        <nav>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/projects">projects</Link>
+        </nav>
     )
 }
 
