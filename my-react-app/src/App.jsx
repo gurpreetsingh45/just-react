@@ -8,12 +8,13 @@
 // import SearchBar from "./components/Project/SearchBar";
 // import StudentList from "./components/Project/StudentList";
 
-import RegisterForm from "./components/Forms/RegisterForm";
+// import RegisterForm from "./components/Forms/RegisterForm";
+import Timer from "./components/ActivityTracker/Timer";
 
 function App(){
   return(
     <>
-      <RegisterForm/>
+      <Timer/>
     </>
   )
 }
